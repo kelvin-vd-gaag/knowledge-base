@@ -118,7 +118,6 @@ nav a {
 }
 
 .greeting {
-  width: 90%;
   margin: 0 auto;
   padding: 1em 0;
   display: flex;
@@ -142,7 +141,6 @@ nav a {
 .search {
   -webkit-box-shadow: 5px 5px 15px 5px #C4C4C4;
   box-shadow: 5px 5px 15px 5px #d5d4d4;
-  width: 90%;
   margin: 0 auto;
   border-radius: 25px;
 }
