@@ -30,7 +30,7 @@
                 <span class="user-name">John Doe</span>
             @endauth
             @guest()
-                <span class="user-name">Overweeg een account aan te maken</span>
+                <span class="user-name">Overweeg een <a href="{{url('/register')}}"> account aan te maken</a></span>
             @endguest
         </div>
         <!--        <div class="personalised-greeting">Welkom terug!</div>-->

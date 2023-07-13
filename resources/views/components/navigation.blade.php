@@ -1,10 +1,10 @@
 <div class="navigation" id="navigation">
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Vakken</a></li>
+            <li><a href="{{url('/home')}}">Home</a></li>
+            <li><a href="{{url('/courses')}}">Onderwerpen</a></li>
             <li><a href="#">F.A.Q</a>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="{{ url('/login') }}">Login</a></li>
         </ul>
     </nav>
 </div>
