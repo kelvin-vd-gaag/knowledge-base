@@ -21,17 +21,6 @@
 <body>
 @component('components.navigation')
 @endcomponent
-
-
-<header class="top-header">
-    <div class="account-management">
-        <i class="fas fa-user"></i>
-        <i class="fas fa-bell"></i>
-    </div>
-    <div class="hamburger-menu" id="hamburger-menu"><i class="fas fa-bars"></i></div>
-
-</header>
-
 <!--Aria hidden true zetten als het menu de focus heeft voor accessibility redenen-->
 <div class="container">
     <div class="greeting">
@@ -58,16 +47,16 @@
             <a href="{{ url('/courses') }}">Meer vakken</a>
         </header>
         <div class="items">
-                <?php
-                foreach ($courses as $course) {
-                    echo "<a href='" . $course->id . "'><div class='item overlay'>
-                                    <div class='background-image' style='background: url(assets/cartoon-four.png)'>
-                                        <h2 class=''>Periode 1</h2>
-                                        <h3 class='courses-title'>" . $course->title . "</h3>
-                                    </div>
-                                </div></a>";
-                }
-                ?>
+            @foreach($courses as $course)
+                <a href='{{ url('/courses/' . $course->slug)  }}'>
+                    <div class='item overlay'>
+                        <div class='background-image' style='background: url(assets/cartoon-four.png)'>
+                            <h2 class=''>Periode 1</h2>
+                            <h3 class='courses-title'>{{$course->title}}</h3>
+                        </div>
+                    </div>
+                </a>
+            @endforeach
         </div>
     </div>
 </div>
