@@ -13,7 +13,8 @@ class CourseController extends Controller
      */
     public function index()
     {
-        $courses = Course::all();
+        //get the 4 most recent courses
+        $courses = Course::latest()->take(4)->get();
         return view("courses.index", compact("courses"));
     }
 
