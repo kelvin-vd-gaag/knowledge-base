@@ -23,7 +23,7 @@
 
 {{--<header class="course-overview" style="">--}}
 <header class="course-overview" style="background: url(' {{ asset("images/html-placeholder.jpg") }} ')">
-<span class="text-white">HTML & CSS</span>
+    <span class="text-white">HTML & CSS</span>
 </header>
 <div class="container course">
     <!--        <div class="bread-crumb"><a href="index.html">home</a> / <a href="overview.php">HTML & CSS</a> / <a href="#">Introductie</a>-->
