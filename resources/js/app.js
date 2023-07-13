@@ -8,7 +8,7 @@ window.Alpine = Alpine;
 Alpine.start();
 
 let menu = document.getElementById("hamburger-menu");
-let explainer = document.getElementById("course-item-explainer");
+let explainer = document.getElementById("courses-item-explainer");
 let course_item = document.getElementsByClassName("course-items");
 let navigation = document.getElementById("navigation");
 

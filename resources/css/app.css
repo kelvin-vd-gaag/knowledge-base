@@ -94,6 +94,9 @@ nav a {
   display: flex;
   align-items: center;
 }
+.top-header .hamburger-menu:hover {
+  cursor: pointer;
+}
 .top-header .hamburger-menu i {
   font-size: 24px;
 }

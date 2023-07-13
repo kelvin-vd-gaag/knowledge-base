@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -13,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
 </head>
@@ -27,21 +29,24 @@
 
 </header>
 
-<header class="course-overview" style="">
-{{--<header class="course-overview" style="background: url('<?php echo get_the_post_thumbnail_url(); ?> ')">--}}
-<span class="text-white">HTML & CSS</span>
+<header class="course-overview">
+    <h1 class="text-white">HTML & CSS</h1>
 </header>
-<div class="container course">
-    <!--        <div class="bread-crumb"><a href="index.html">home</a> / <a href="overview.php">HTML & CSS</a> / <a href="#">Introductie</a>-->
-    <!--        </div>-->
+<div class="container">
     <div class="bread-crumb">
-        <?php //get_breadcrumb(); ?><!---->
+        <a href="{{ url('/') }}">Home</a> »
+        <a href="{{ url('courses') }}">Courses</a>
+
     </div>
-    <div class="course">
-        <h1> {{ $course->title }}</h1>
-        {{ $course->content }}
+    <div class="course-items-overview">
+        @foreach($courses as $course)
+            <a href="{{ url('/courses/' . $course->title) }}" class="course-items">
+                <h2>{{ $course->title }}</h2>
+            </a>
+        @endforeach
     </div>
 
 </div>
+
 </body>
 </html>

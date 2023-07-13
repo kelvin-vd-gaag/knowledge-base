@@ -63,7 +63,7 @@
     <div class="overview">
         <header>
             <h1><span class="text-underline">Kies</span> je vak</h1>
-            <a href="#">Meer vakken</a>
+            <a href="{{ url('/courses') }}">Meer vakken</a>
         </header>
         <div class="items">
                         <?php
@@ -71,7 +71,7 @@
                             echo "<a href='" . $course->id . "'><div class='item overlay'>
                                     <div class='background-image' style='background: url(assets/cartoon-four.png)'>
                                         <h2 class=''>Periode 1</h2>
-                                        <h3 class='course-title'>" . $course->title ."</h3>
+                                        <h3 class='courses-title'>" . $course->title ."</h3>
                                     </div>
                                 </div></a>";
                         }

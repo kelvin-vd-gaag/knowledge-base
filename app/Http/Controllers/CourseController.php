@@ -14,7 +14,7 @@ class CourseController extends Controller
     public function index()
     {
         //get the 4 most recent courses
-        $courses = Course::latest()->take(4)->get();
+        $courses = Course::all();
         return view("courses.index", compact("courses"));
     }
 
@@ -37,9 +37,10 @@ class CourseController extends Controller
     /**
      * Display the specified resource.
      */
+
     public function show(Course $course)
     {
-        //
+        return view("courses.show", compact("course"));
     }
 
     /**

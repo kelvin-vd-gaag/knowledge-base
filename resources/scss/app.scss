@@ -97,6 +97,10 @@ nav {
         display: flex;
         align-items: center;
 
+        &:hover{
+            cursor: pointer;
+        }
+
         i {
             font-size: 24px;
         }
