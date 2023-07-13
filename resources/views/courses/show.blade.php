@@ -21,8 +21,8 @@
 @component('components.navigation')
 @endcomponent
 
-<header class="course-overview" style="">
-{{--<header class="course-overview" style="background: url('<?php echo get_the_post_thumbnail_url(); ?> ')">--}}
+{{--<header class="course-overview" style="">--}}
+<header class="course-overview" style="background: url(' {{ asset("images/html-placeholder.jpg") }} ')">
 <span class="text-white">HTML & CSS</span>
 </header>
 <div class="container course">

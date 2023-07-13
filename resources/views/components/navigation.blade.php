@@ -12,7 +12,7 @@
 
 <header class="top-header">
     <div class="account-management">
-        <a href="{{url('/')}}"><i class="fas fa-home"></i></a>
+        <a href="{{url('/')}}" aria-label="Home"><i class="fas fa-home"></i></a>
         <i class="fas fa-bell"></i>
     </div>
     <div class="hamburger-menu" id="hamburger-menu"><i class="fas fa-bars"></i></div>

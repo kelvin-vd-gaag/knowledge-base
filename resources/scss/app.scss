@@ -1,5 +1,11 @@
 @import "desktop";
 
+.fas{
+  &:before{
+      color: black;
+  }
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -289,22 +295,23 @@ nav {
 .course-overview {
 
     //background: url("../assets/cartoon-four.png");
-    background-size: contain !important;
+    background-size: cover !important;
     //background-color: hsl(220deg 80% 66%);
     background-repeat: no-repeat !important;
     background-position: center !important;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    border-bottom-right-radius: 50px;
+    //border-bottom-right-radius: 50px;
     /*TEMPORARY HEIGHT PLACEHOLDER*/
     min-height: 300px;
 
 }
 
 .course-items-overview {
-    width: 80%;
+    //width: 80%;
     margin: 0 auto;
+    padding: 0 1em;
     display: flex;
     gap: 1em;
     flex-direction: column;
@@ -330,7 +337,7 @@ nav {
 }
 
 .bread-crumb {
-    width: 80%;
+    //width: 80%;
     margin: 1em auto;
     display: flex;
     gap: 0.5em;

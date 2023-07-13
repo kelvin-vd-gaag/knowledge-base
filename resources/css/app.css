@@ -5,6 +5,10 @@
     margin: 0 auto;
   }
 }
+.fas:before {
+  color: black;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -247,20 +251,19 @@ nav a {
 
 /*overview*/
 .course-overview {
-  background-size: contain !important;
+  background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  border-bottom-right-radius: 50px;
   /*TEMPORARY HEIGHT PLACEHOLDER*/
   min-height: 300px;
 }
 
 .course-items-overview {
-  width: 80%;
   margin: 0 auto;
+  padding: 0 1em;
   display: flex;
   gap: 1em;
   flex-direction: column;
@@ -282,7 +285,6 @@ nav a {
 }
 
 .bread-crumb {
-  width: 80%;
   margin: 1em auto;
   display: flex;
   gap: 0.5em;
