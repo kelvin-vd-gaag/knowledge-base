@@ -20,18 +20,8 @@
 </head>
 <body>
 
-<header class="top-header">
-    <div class="account-management">
-        <i class="fas fa-user"></i>
-        <i class="fas fa-bell"></i>
-    </div>
-    <div class="hamburger-menu" id="hamburger-menu"><i class="fas fa-bars"></i></div>
-
-</header>
-
-<header class="course-overview">
-    <h1 class="text-white">HTML & CSS</h1>
-</header>
+@component("components.navigation")
+@endcomponent
 <div class="container">
     <div class="bread-crumb">
         <a href="{{ url('/') }}">Home</a> »

@@ -18,14 +18,8 @@
 </head>
 <body>
 
-<header class="top-header">
-    <div class="account-management">
-        <i class="fas fa-user"></i>
-        <i class="fas fa-bell"></i>
-    </div>
-    <div class="hamburger-menu" id="hamburger-menu"><i class="fas fa-bars"></i></div>
-
-</header>
+@component('components.navigation')
+@endcomponent
 
 <header class="course-overview" style="">
 {{--<header class="course-overview" style="background: url('<?php echo get_the_post_thumbnail_url(); ?> ')">--}}

@@ -19,16 +19,8 @@
 
 </head>
 <body>
-<div class="navigation" id="navigation">
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Vakken</a></li>
-            <li><a href="#">F.A.Q</a>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
-</div>
+@component('components.navigation')
+@endcomponent
 
 
 <header class="top-header">
@@ -66,16 +58,16 @@
             <a href="{{ url('/courses') }}">Meer vakken</a>
         </header>
         <div class="items">
-                        <?php
-                        foreach ($courses as $course) {
-                            echo "<a href='" . $course->id . "'><div class='item overlay'>
+                <?php
+                foreach ($courses as $course) {
+                    echo "<a href='" . $course->id . "'><div class='item overlay'>
                                     <div class='background-image' style='background: url(assets/cartoon-four.png)'>
                                         <h2 class=''>Periode 1</h2>
-                                        <h3 class='courses-title'>" . $course->title ."</h3>
+                                        <h3 class='courses-title'>" . $course->title . "</h3>
                                     </div>
                                 </div></a>";
-                        }
-                        ?>
+                }
+                ?>
         </div>
     </div>
 </div>
